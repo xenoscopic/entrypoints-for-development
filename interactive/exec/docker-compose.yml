@@ -1,0 +1,12 @@
+services:
+  web:
+    build:
+      context: services/web
+    # Add ptrace capabilities to the container and disable seccomp in order to
+    # enable debugging. These settings should only be used in development.
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+    ports:
+      - "8080:80"

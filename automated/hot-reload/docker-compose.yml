@@ -1,0 +1,9 @@
+services:
+  blog:
+    build:
+      context: services/blog
+    volumes:
+      - ./site:/site
+      - ./themes:/themes
+    ports:
+      - "8080:1313"

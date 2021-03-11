@@ -1,0 +1,12 @@
+[submodule "automated/run/site"]
+	path = automated/run/site
+	url = https://github.com/gohugoio/hugoBasicExample.git
+[submodule "automated/run/themes/hyde"]
+	path = automated/run/themes/hyde
+	url = https://github.com/spf13/hyde
+[submodule "automated/reload/site"]
+	path = automated/reload/site
+	url = https://github.com/gohugoio/hugoBasicExample.git
+[submodule "automated/reload/themes/hyde"]
+	path = automated/reload/themes/hyde
+	url = https://github.com/spf13/hyde

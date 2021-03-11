@@ -1,0 +1,10 @@
+services:
+  web:
+    # Use an init process since Python doesn't handle termination signals.
+    init: true
+    build:
+      context: services/web
+    volumes:
+      - ./server:/server
+    ports:
+      - "8080:5000"

@@ -1,0 +1,25 @@
+volumes:
+  public:
+
+services:
+  hugo:
+    build:
+      context: services/hugo
+    profiles:
+      - adhoc
+    volumes:
+      - ./site:/site
+      - ./themes:/themes
+      - public:/public
+  web:
+    build:
+      context: services/web
+    volumes:
+      - public:/public
+    ports:
+      - "8080:80"
+  benchmark:
+    build:
+      context: services/benchmark
+    profiles:
+      - adhoc

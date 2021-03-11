@@ -1,0 +1,12 @@
+[submodule "automated/hot-reload/site"]
+	path = automated/hot-reload/site
+	url = https://github.com/gohugoio/hugoBasicExample.git
+[submodule "automated/hot-reload/themes/hyde"]
+	path = automated/hot-reload/themes/hyde
+	url = https://github.com/spf13/hyde
+[submodule "automated/sidecar-run/site"]
+	path = automated/sidecar-run/site
+	url = https://github.com/gohugoio/hugoBasicExample.git
+[submodule "automated/sidecar-run/themes/hyde"]
+	path = automated/sidecar-run/themes/hyde
+	url = https://github.com/spf13/hyde
